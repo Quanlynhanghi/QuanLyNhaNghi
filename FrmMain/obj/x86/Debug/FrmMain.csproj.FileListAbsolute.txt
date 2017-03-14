@@ -1,0 +1,9 @@
+D:\GitHub\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.Properties.Resources.resources
+D:\GitHub\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.csproj.GenerateResource.Cache
+D:\GitHub\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.csprojResolveAssemblyReference.cache
+D:\GitHub\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.Frrm_Main.resources
+D:\GitHub\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.exe.config
+D:\GitHub\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.exe
+D:\GitHub\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.pdb
+D:\GitHub\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.exe
+D:\GitHub\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.pdb
