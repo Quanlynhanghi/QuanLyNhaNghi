@@ -98,6 +98,7 @@
             this.btnluuketnoi.TabIndex = 23;
             this.btnluuketnoi.Text = "Lưu kết nối";
             this.btnluuketnoi.UseVisualStyleBackColor = true;
+            this.btnluuketnoi.Click += new System.EventHandler(this.btnluuketnoi_Click);
             // 
             // txtmk
             // 

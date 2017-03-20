@@ -10,3 +10,11 @@ D:\GitHub\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.pdb
 C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.exe.config
 C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.exe
 C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.pdb
+C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.exe
+C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.pdb
+C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.csprojResolveAssemblyReference.cache
+C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.Frm_ThietLapChuoiKetNoi.resources
+C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.Frrm_Main.resources
+C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.HeThong.Frm_DangNhap.resources
+C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.Properties.Resources.resources
+C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.csproj.GenerateResource.Cache

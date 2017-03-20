@@ -98,6 +98,11 @@ namespace FrmMain
             }
         }
 
+        private void btnluuketnoi_Click(object sender, EventArgs e)
+        {
+
+        }
+
        
     }
 }
