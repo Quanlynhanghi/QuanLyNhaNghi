@@ -7,3 +7,6 @@ D:\GitHub\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.exe
 D:\GitHub\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.pdb
 D:\GitHub\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.exe
 D:\GitHub\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.pdb
+C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.exe.config
+C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.exe
+C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.pdb
