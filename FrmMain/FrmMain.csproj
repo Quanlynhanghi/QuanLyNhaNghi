@@ -51,10 +51,10 @@
     <Compile Include="Bussiness\BLL_DangNhap.cs" />
     <Compile Include="cls_DataLayer.cs" />
     <Compile Include="cls_Main.cs" />
-    <Compile Include="Frm_ThietLapChuoiKetNoi.cs">
+    <Compile Include="HeThong\Frm_ThietLapChuoiKetNoi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_ThietLapChuoiKetNoi.Designer.cs">
+    <Compile Include="HeThong\Frm_ThietLapChuoiKetNoi.Designer.cs">
       <DependentUpon>Frm_ThietLapChuoiKetNoi.cs</DependentUpon>
     </Compile>
     <Compile Include="Frrm_Main.cs">
@@ -71,7 +71,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm_ThietLapChuoiKetNoi.resx">
+    <EmbeddedResource Include="HeThong\Frm_ThietLapChuoiKetNoi.resx">
       <DependentUpon>Frm_ThietLapChuoiKetNoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frrm_Main.resx">

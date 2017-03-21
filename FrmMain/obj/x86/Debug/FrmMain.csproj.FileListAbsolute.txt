@@ -18,3 +18,14 @@ C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.
 C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.HeThong.Frm_DangNhap.resources
 C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.Properties.Resources.resources
 C:\Users\PC\Downloads\QuanLiNhaNghi\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.csproj.GenerateResource.Cache
+E:\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.exe.config
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.exe
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.pdb
+E:\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.exe
+E:\QuanLyNhaNghi\FrmMain\bin\Debug\FrmMain.pdb
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.csprojResolveAssemblyReference.cache
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.Frm_ThietLapChuoiKetNoi.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.Frrm_Main.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.HeThong.Frm_DangNhap.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.Properties.Resources.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.csproj.GenerateResource.Cache
