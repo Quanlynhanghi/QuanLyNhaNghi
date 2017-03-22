@@ -29,8 +29,25 @@ namespace FrmMain
 
         private void buttonDangXuat_Click(object sender, EventArgs e)
         {
+            foreach (Form item in this.MdiChildren)
+            {
+                item.Close();
+            }
             Frm_DangNhap _dangnhap = new Frm_DangNhap();
             _dangnhap.ShowDialog();
+        }
+
+        private void Frrm_Main_Load(object sender, EventArgs e)
+        {
+            Frm_DangNhap _dangnhap = new Frm_DangNhap();
+            _dangnhap.ShowDialog();
+        }
+
+        private void buttonDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            Frm_DoiMatKhau _doimatkhau = new Frm_DoiMatKhau();
+            _doimatkhau.MdiParent = this;
+            _doimatkhau.Show();
         }
     }
 }

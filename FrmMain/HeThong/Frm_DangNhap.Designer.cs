@@ -137,8 +137,10 @@
             // 
             // Frm_DangNhap
             // 
+            this.AcceptButton = this.btndangnhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnthoat;
             this.ClientSize = new System.Drawing.Size(456, 251);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
@@ -150,6 +152,7 @@
             this.Controls.Add(this.txttendangnhap);
             this.Controls.Add(this.label2);
             this.Name = "Frm_DangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_DangNhap";
             this.Load += new System.EventHandler(this.Frm_DangNhap_Load);
             this.ResumeLayout(false);
