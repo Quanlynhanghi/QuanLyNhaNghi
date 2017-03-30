@@ -61,10 +61,66 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bussiness\BLL_DangNhap.cs" />
+    <Compile Include="Bussiness\BLL_DichVu.cs" />
     <Compile Include="Bussiness\BLL_DoiMatKhau.cs" />
+    <Compile Include="Bussiness\BLL_KhachHang.cs" />
+    <Compile Include="Bussiness\BLL_NhanVien.cs" />
+    <Compile Include="Bussiness\BLL_Phong.cs" />
     <Compile Include="cls_DataLayer.cs" />
     <Compile Include="cls_Main.cs" />
+    <Compile Include="DanhMuc\Frm_DichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DichVu.Designer.cs">
+      <DependentUpon>Frm_DichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DichVu_Modifies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DichVu_Modifies.Designer.cs">
+      <DependentUpon>Frm_DichVu_Modifies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KhachHang.Designer.cs">
+      <DependentUpon>Frm_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KhachHang_Modifies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KhachHang_Modifies.Designer.cs">
+      <DependentUpon>Frm_KhachHang_Modifies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_NhanVien.Designer.cs">
+      <DependentUpon>Frm_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_NhanVien_Modifies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_NhanVien_Modifies.Designer.cs">
+      <DependentUpon>Frm_NhanVien_Modifies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_Phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_Phong.Designer.cs">
+      <DependentUpon>Frm_Phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_Phong_Modifies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_Phong_Modifies.Designer.cs">
+      <DependentUpon>Frm_Phong_Modifies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DTO_DichVu.cs" />
     <Compile Include="DTO\DTO_HeThong.cs" />
+    <Compile Include="DTO\DTO_KhachHang.cs" />
+    <Compile Include="DTO\DTO_NhanVien.cs" />
+    <Compile Include="DTO\DTO_Phong.cs" />
     <Compile Include="HeThong\Frm_DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +147,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DanhMuc\Frm_DichVu.resx">
+      <DependentUpon>Frm_DichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_DichVu_Modifies.resx">
+      <DependentUpon>Frm_DichVu_Modifies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_KhachHang.resx">
+      <DependentUpon>Frm_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_KhachHang_Modifies.resx">
+      <DependentUpon>Frm_KhachHang_Modifies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_NhanVien.resx">
+      <DependentUpon>Frm_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_NhanVien_Modifies.resx">
+      <DependentUpon>Frm_NhanVien_Modifies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_Phong.resx">
+      <DependentUpon>Frm_Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_Phong_Modifies.resx">
+      <DependentUpon>Frm_Phong_Modifies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HeThong\Frm_DoiMatKhau.resx">
       <DependentUpon>Frm_DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>

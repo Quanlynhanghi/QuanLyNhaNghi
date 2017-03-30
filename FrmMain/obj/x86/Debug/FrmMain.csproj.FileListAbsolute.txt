@@ -31,10 +31,6 @@ E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.pdb
 E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.exe.licenses
 E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.csprojResolveAssemblyReference.cache
 E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.HeThong.Frm_DoiMatKhau.resources
-E:\QuanLyNhaNghi\FrmMain\bin\Debug\DevExpress.Data.v15.1.dll
-E:\QuanLyNhaNghi\FrmMain\bin\Debug\DevExpress.Utils.v15.1.dll
-E:\QuanLyNhaNghi\FrmMain\bin\Debug\DevExpress.XtraBars.v15.1.dll
-E:\QuanLyNhaNghi\FrmMain\bin\Debug\DevExpress.XtraEditors.v15.1.dll
 E:\QuanLyNhaNghi\FrmMain\bin\Debug\DevExpress.Data.v15.1.xml
 E:\QuanLyNhaNghi\FrmMain\bin\Debug\DevExpress.Utils.v15.1.xml
 E:\QuanLyNhaNghi\FrmMain\bin\Debug\DevExpress.XtraBars.v15.1.xml
@@ -55,3 +51,11 @@ E:\QuanLyNhaNghi\FrmMain\bin\Debug\de\DevExpress.XtraEditors.v15.1.resources.dll
 E:\QuanLyNhaNghi\FrmMain\bin\Debug\es\DevExpress.XtraEditors.v15.1.resources.dll
 E:\QuanLyNhaNghi\FrmMain\bin\Debug\ja\DevExpress.XtraEditors.v15.1.resources.dll
 E:\QuanLyNhaNghi\FrmMain\bin\Debug\ru\DevExpress.XtraEditors.v15.1.resources.dll
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_KhachHang.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_DichVu.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_DichVu_Modifies.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_Phong.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_KhachHang_Modifies.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_NhanVien.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_NhanVien_Modifies.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_Phong_Modifies.resources
