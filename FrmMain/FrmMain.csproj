@@ -39,6 +39,7 @@
     <Reference Include="DevExpress.Data.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
@@ -48,8 +49,14 @@
     <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,14 +67,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bussiness\BLL_DangKiPhong.cs" />
+    <Compile Include="Bussiness\BLL_DangKiThuePhong.cs" />
     <Compile Include="Bussiness\BLL_DangNhap.cs" />
     <Compile Include="Bussiness\BLL_DichVu.cs" />
     <Compile Include="Bussiness\BLL_DoiMatKhau.cs" />
+    <Compile Include="Bussiness\BLL_DungDV.cs" />
+    <Compile Include="Bussiness\BLL_HoaDon.cs" />
     <Compile Include="Bussiness\BLL_KhachHang.cs" />
     <Compile Include="Bussiness\BLL_NhanVien.cs" />
+    <Compile Include="Bussiness\BLL_PhieuNhan.cs" />
     <Compile Include="Bussiness\BLL_Phong.cs" />
     <Compile Include="cls_DataLayer.cs" />
     <Compile Include="cls_Main.cs" />
+    <Compile Include="DanhMuc\Frm_DanhSachDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DanhSachDangKy.Designer.cs">
+      <DependentUpon>Frm_DanhSachDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DanhSachHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DanhSachHoaDon.Designer.cs">
+      <DependentUpon>Frm_DanhSachHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DanhSachNhanPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DanhSachNhanPhong.Designer.cs">
+      <DependentUpon>Frm_DanhSachNhanPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DungDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DungDichVu.Designer.cs">
+      <DependentUpon>Frm_DungDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DangKiThuePhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DangKiThuePhong.Designer.cs">
+      <DependentUpon>Frm_DangKiThuePhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DatPhong.Designer.cs">
+      <DependentUpon>Frm_DatPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhMuc\Frm_DichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +127,18 @@
     </Compile>
     <Compile Include="DanhMuc\Frm_DichVu_Modifies.Designer.cs">
       <DependentUpon>Frm_DichVu_Modifies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DSKhachDangKics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DSKhachDangKics.Designer.cs">
+      <DependentUpon>Frm_DSKhachDangKics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_HoaDon.Designer.cs">
+      <DependentUpon>Frm_HoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="DanhMuc\Frm_KhachHang.cs">
       <SubType>Form</SubType>
@@ -104,6 +164,12 @@
     <Compile Include="DanhMuc\Frm_NhanVien_Modifies.Designer.cs">
       <DependentUpon>Frm_NhanVien_Modifies.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhMuc\Frm_PhieuNhanPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_PhieuNhanPhong.Designer.cs">
+      <DependentUpon>Frm_PhieuNhanPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhMuc\Frm_Phong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,10 +182,31 @@
     <Compile Include="DanhMuc\Frm_Phong_Modifies.Designer.cs">
       <DependentUpon>Frm_Phong_Modifies.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhMuc\Frm_Report DichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_Report DichVu.Designer.cs">
+      <DependentUpon>Frm_Report DichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_ReportHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_ReportHoaDon.Designer.cs">
+      <DependentUpon>Frm_ReportHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DTO\DTO_DichVu.cs" />
+    <Compile Include="DTO\DTO_Dungdichvu.cs" />
     <Compile Include="DTO\DTO_HeThong.cs" />
+    <Compile Include="DTO\DTO_HoaDon.cs" />
     <Compile Include="DTO\DTO_KhachHang.cs" />
     <Compile Include="DTO\DTO_NhanVien.cs" />
+    <Compile Include="DTO\DTO_PhieuDangKy.cs" />
+    <Compile Include="DTO\DTO_PhieuNhanPhong.cs" />
     <Compile Include="DTO\DTO_Phong.cs" />
     <Compile Include="HeThong\Frm_DoiMatKhau.cs">
       <SubType>Form</SubType>
@@ -147,11 +234,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DanhMuc\Frm_DanhSachDangKy.resx">
+      <DependentUpon>Frm_DanhSachDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_DanhSachHoaDon.resx">
+      <DependentUpon>Frm_DanhSachHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_DanhSachNhanPhong.resx">
+      <DependentUpon>Frm_DanhSachNhanPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_DungDichVu.resx">
+      <DependentUpon>Frm_DungDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_DangKiThuePhong.resx">
+      <DependentUpon>Frm_DangKiThuePhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_DatPhong.resx">
+      <DependentUpon>Frm_DatPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\Frm_DichVu.resx">
       <DependentUpon>Frm_DichVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\Frm_DichVu_Modifies.resx">
       <DependentUpon>Frm_DichVu_Modifies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_DSKhachDangKics.resx">
+      <DependentUpon>Frm_DSKhachDangKics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_HoaDon.resx">
+      <DependentUpon>Frm_HoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\Frm_KhachHang.resx">
       <DependentUpon>Frm_KhachHang.cs</DependentUpon>
@@ -165,11 +276,20 @@
     <EmbeddedResource Include="DanhMuc\Frm_NhanVien_Modifies.resx">
       <DependentUpon>Frm_NhanVien_Modifies.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_PhieuNhanPhong.resx">
+      <DependentUpon>Frm_PhieuNhanPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\Frm_Phong.resx">
       <DependentUpon>Frm_Phong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\Frm_Phong_Modifies.resx">
       <DependentUpon>Frm_Phong_Modifies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_Report DichVu.resx">
+      <DependentUpon>Frm_Report DichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_ReportHoaDon.resx">
+      <DependentUpon>Frm_ReportHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HeThong\Frm_DoiMatKhau.resx">
       <DependentUpon>Frm_DoiMatKhau.cs</DependentUpon>
@@ -194,7 +314,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Rp_HoaDon.rdlc" />
+    <EmbeddedResource Include="Rp_ThongKeDichVu.rdlc" />
     <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -204,6 +337,60 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO-Symbol-Refresh.ico-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 RTF File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_open_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_two_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\146.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cup_coffee-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_add_481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit-Male-User-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\121.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThongKe.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Books-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

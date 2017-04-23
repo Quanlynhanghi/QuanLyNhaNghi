@@ -58,16 +58,16 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(533, 321);
+            this.panel1.Size = new System.Drawing.Size(699, 310);
             this.panel1.TabIndex = 0;
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblerr});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 299);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 288);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(533, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(699, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -95,7 +95,7 @@
             this.dgvPhong.ReadOnly = true;
             this.dgvPhong.RowHeadersVisible = false;
             this.dgvPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPhong.Size = new System.Drawing.Size(533, 296);
+            this.dgvPhong.Size = new System.Drawing.Size(699, 285);
             this.dgvPhong.TabIndex = 1;
             this.dgvPhong.Click += new System.EventHandler(this.dgvPhong_Click);
             // 
@@ -108,7 +108,7 @@
             this.btnThoat});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(533, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(699, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -166,8 +166,8 @@
             // 
             // colmaloai
             // 
-            this.colmaloai.DataPropertyName = "maloai";
-            this.colmaloai.HeaderText = "Mã loại";
+            this.colmaloai.DataPropertyName = "loaiphong";
+            this.colmaloai.HeaderText = "Loại phòng";
             this.colmaloai.Name = "colmaloai";
             this.colmaloai.ReadOnly = true;
             this.colmaloai.Width = 150;
@@ -202,7 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 321);
+            this.ClientSize = new System.Drawing.Size(699, 310);
             this.Controls.Add(this.panel1);
             this.Name = "Frm_Phong";
             this.Text = "Frm_Phong";

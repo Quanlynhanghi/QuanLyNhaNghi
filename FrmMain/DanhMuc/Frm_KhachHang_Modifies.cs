@@ -21,6 +21,7 @@ namespace FrmMain.DanhMuc
         public bool them = false;
         private string err = "";
         private string makhachhang = "";
+        public string tenkhachhang = "";
         BLL_KhachHang bd = new BLL_KhachHang(cls_Main.duongdanfileketnoi);
         internal DTO_KhachHang _khachhang = new DTO_KhachHang();
         private void TangMaSoKhachHang()
@@ -59,6 +60,7 @@ namespace FrmMain.DanhMuc
         {
                 //cập nhật thông tin khách hàng
                 LayGiaTriTuCacControl();
+                tenkhachhang = txttenkhachhang.Text;
                 if (!string.IsNullOrEmpty(txttenkhachhang.Text))
                 {
                     if (bd.LuuThongTinKhachHang(ref err, _khachhang) == true)

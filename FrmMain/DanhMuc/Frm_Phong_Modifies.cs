@@ -29,22 +29,28 @@ namespace FrmMain.DanhMuc
             _obj = bd.GetValue(ref err);
             if (_obj != null)
             {
-                Maphong = string.Format("PH{0:0000000}", Convert.ToInt32(_obj));
+                Maphong = string.Format("PH{0:000}", Convert.ToInt32(_obj));
             }
         }
         private void LayGiaTriTuCacControl()
         {
             _phong = new DTO_Phong();
             _phong.Maphong = txtmaphong.Text;
-            _phong.Maloai = txtmaloai.Text;
-            _phong.Trangthai = txttrangthai.Text;
+            _phong.Maloai = cbLoaiphong.Text;
+            _phong.Trangthai = comboBox1.Text;
             _phong.Giaphong =Convert.ToDouble(txtgiaphong.Text);
+        }
+        private void DulieuvaoCombox()
+        {
+            cbLoaiphong.Items.Add("Bình Dân");
+            cbLoaiphong.Items.Add("Vip");
+            cbLoaiphong.Items.Add("Sinh Viên");      
         }
         private void GanGiaTriVaoCacControl(DTO_Phong _phong)
         {
             txtmaphong.Text = _phong.Maphong;
-            txtmaloai.Text = _phong.Maloai;
-            txttrangthai.Text = _phong.Trangthai;
+            cbLoaiphong.Text = _phong.Maloai;
+            comboBox1.Text = _phong.Trangthai;
             txtgiaphong.Text = _phong.Giaphong.ToString();
         }
         private void btnLuu_Click(object sender, EventArgs e)
@@ -52,7 +58,7 @@ namespace FrmMain.DanhMuc
             if (_phong != null)
             {
                 LayGiaTriTuCacControl();
-                if (bd.InsertUpdateSanPham(ref err, _phong) == true)
+                if (bd.InsertUpdatePhong(ref err, _phong) == true)
                 {
                     MessageBox.Show("Phòng có mã số " + _phong.Maphong + " đã được cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
@@ -71,6 +77,7 @@ namespace FrmMain.DanhMuc
 
         private void Frm_Phong_Modifies_Load(object sender, EventArgs e)
         {
+            DulieuvaoCombox();
             if (them == true)
             {
                 TangMaSoPhong();

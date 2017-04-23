@@ -20,7 +20,6 @@ namespace FrmMain.HeThong
         }
         BLL_DangNhap bd;
         string err = "";
-        string manv, tennhanvien;
         public static string tentaikhoan;
         private bool kiemtradangnhap(string tentaikhoan, string matkhau)
         {
@@ -43,7 +42,6 @@ namespace FrmMain.HeThong
                 {
                     if (kiemtradangnhap(txttendangnhap.Text, txtmatkhau.Text) == true)
                     {
-                        Frrm_Main.tennhanvien = tennhanvien;
                         tentaikhoan = txttendangnhap.Text;
                         this.Close();
                     }

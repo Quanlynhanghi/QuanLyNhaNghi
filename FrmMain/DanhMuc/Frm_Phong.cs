@@ -24,8 +24,8 @@ namespace FrmMain.DanhMuc
         private void HienThiDanhSachPhong()
         {
             dtDanhSachPhong = new DataTable();
-            dtDanhSachPhong = bd.GetDanhSachSanPham(ref err);
-            dgvPhong.DataSource = dtDanhSachPhong;
+            dtDanhSachPhong = bd.GetDanhSachPhong(ref err);
+            dgvPhong.DataSource = dtDanhSachPhong.DefaultView;
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -58,7 +58,7 @@ namespace FrmMain.DanhMuc
             {
                 if (dgvPhong.Rows[i].Cells["colXoa"].Value.ToString() == "1")
                 {
-                    if (bd.DeleteDichVu(ref err, dgvPhong.Rows[i].Cells["colmaphong"].Value.ToString(), ref sodong))
+                    if (bd.DeletePhong(ref err, dgvPhong.Rows[i].Cells["colmaphong"].Value.ToString(), ref sodong))
                     {
                         dem += sodong;
                     }

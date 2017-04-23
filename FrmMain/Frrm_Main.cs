@@ -78,5 +78,52 @@ namespace FrmMain
             _phong.MdiParent = this;
             _phong.Show();
         }
+
+
+        private void buttonItem15_Click(object sender, EventArgs e)
+        {
+            Frm_DangKiThuePhong dangki = new Frm_DangKiThuePhong();
+            dangki.MdiParent = this;
+            dangki.Show();
+            dangki.WindowState = FormWindowState.Maximized;
+            
+        }
+
+        private void ribbonBarDangKy_ItemClick(object sender, EventArgs e)
+        {
+            Frm_DanhSachDangKy _nhanvien = new Frm_DanhSachDangKy();
+            _nhanvien.MdiParent = this;
+            _nhanvien.Show();
+        }
+
+        private void buttonKHNhanPhong_Click(object sender, EventArgs e)
+        {
+            Frm_DanhSachNhanPhong _nhanvien = new Frm_DanhSachNhanPhong();
+            _nhanvien.MdiParent = this;
+            _nhanvien.Show();
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            Frm_HoaDon _nhanvien = new Frm_HoaDon();
+            _nhanvien.MdiParent = this;
+            _nhanvien.Show();
+        }
+
+        private void buttonItemLoaiDVu_Click(object sender, EventArgs e)
+        {
+            Frm_DungDichVu _nhanvien = new Frm_DungDichVu();
+            _nhanvien.MdiParent = this;
+            _nhanvien.Show();
+        }
+
+        private void buttonItem1_Click(object sender, EventArgs e)
+        {
+            Frm_DangKiThuePhong dangki = new Frm_DangKiThuePhong();
+            dangki.MdiParent = this;
+            dangki.Show();
+            dangki.WindowState = FormWindowState.Maximized;
+        }
+
     }
 }
