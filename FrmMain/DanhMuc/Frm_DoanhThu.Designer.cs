@@ -1,6 +1,6 @@
 ﻿namespace FrmMain.DanhMuc
 {
-    partial class Frm_Report_DichVu
+    partial class Frm_DoanhThu
     {
         /// <summary>
         /// Required designer variable.
@@ -36,18 +36,18 @@
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(665, 424);
+            this.reportViewer1.Size = new System.Drawing.Size(693, 468);
             this.reportViewer1.TabIndex = 0;
             // 
-            // Frm_Report_DichVu
+            // Frm_DoanhThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 424);
+            this.ClientSize = new System.Drawing.Size(693, 468);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "Frm_Report_DichVu";
-            this.Text = "Frm_Report_DichVu";
-            this.Load += new System.EventHandler(this.Frm_Report_DichVu_Load);
+            this.Name = "Frm_DoanhThu";
+            this.Text = "Frm_DoanhThu";
+            this.Load += new System.EventHandler(this.Frm_DoanhThu_Load);
             this.ResumeLayout(false);
 
         }
@@ -55,7 +55,5 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-
-
     }
 }

@@ -121,11 +121,7 @@ namespace FrmMain.DanhMuc
 
         private void gridControl1_Click(object sender, EventArgs e)
         {
-            SetToDTODichVu();
-            txtMaSuDung.Text = _dichvu.Masudung;
-            cmbMadichvu.Text = _dichvu.Madichvu;
-            cmbMaCTNhanPhong.Text = _dichvu.Maphieuthue;
-            numSoLuong.Value = _dichvu.Soluong;
+            
         }
 
         private void gridView1_Click(object sender, EventArgs e)

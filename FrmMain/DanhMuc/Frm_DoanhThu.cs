@@ -6,33 +6,34 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Microsoft.Reporting.WinForms;
 using FrmMain.Bussiness;
+using Microsoft.Reporting.WinForms;
 
 namespace FrmMain.DanhMuc
 {
-    public partial class Frm_Report_DichVu : Form
+    public partial class Frm_DoanhThu : Form
     {
-        public Frm_Report_DichVu()
+        public Frm_DoanhThu()
         {
             InitializeComponent();
         }
-        BLL_DungDV bd = new BLL_DungDV(cls_Main.duongdanfileketnoi);
+        BLL_HoaDon bd = new BLL_HoaDon(cls_Main.duongdanfileketnoi);
         string err = "";
         public string mahoadon = "";
         private void hienthireport()
         {
             DataTable dt = new DataTable();
             dt.Clear();
-            dt = bd.Thongke(ref err);
+            dt = bd.LayDanhSach(ref err);
             reportViewer1.Reset();
-            reportViewer1.LocalReport.ReportEmbeddedResource = "FrmMain.DanhMuc." + "Rp_ThongKeDichVu.rdlc";
+            reportViewer1.LocalReport.ReportEmbeddedResource = "FrmMain.DanhMuc." + "Rp_DoanhThu.rdlc";
             reportViewer1.LocalReport.DataSources.Clear();
-            ReportDataSource _datasource = new ReportDataSource("DichVu", dt);
+            ReportDataSource _datasource = new ReportDataSource("HoaDon", dt);
             reportViewer1.LocalReport.DataSources.Add(_datasource);
             this.reportViewer1.RefreshReport();
         }
-        private void Frm_Report_DichVu_Load(object sender, EventArgs e)
+        
+        private void Frm_DoanhThu_Load(object sender, EventArgs e)
         {
             hienthireport();
             this.reportViewer1.RefreshReport();

@@ -29,7 +29,7 @@ namespace FrmMain.DanhMuc
             _obj = bd.GetValue(ref err);
             if (_obj != null)
             {
-                manhanvien = string.Format("NV{0:0000000}", Convert.ToInt32(_obj));
+                manhanvien = string.Format("NV{0:00}", Convert.ToInt32(_obj));
             }
         }
         private void GanGiaTriVaoCacControl(DTO_NhanVien _nhanvien)

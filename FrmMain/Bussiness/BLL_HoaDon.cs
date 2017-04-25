@@ -63,5 +63,14 @@ namespace FrmMain.Bussiness
         {
             return data.GetDataTable(ref err, "sp_InHoaDon", CommandType.StoredProcedure, new SqlParameter("@mahoadon", mahoadon));
         }
+        public SqlDataReader Layngaythue(ref string err, string maphieudat)
+        {
+            return data.MyExcuteReader(ref err, "sp_ngaythue", CommandType.StoredProcedure,
+                new SqlParameter("@maphieuthue", maphieudat));
+        }
+        public object Tenkhachhang(ref string err, string maphieuthue)
+        {
+            return data.GetValue(ref err, "sp_KhachhangTheoMa", CommandType.StoredProcedure, new SqlParameter("@maphieuthue", maphieuthue));
+        }
     }
 }

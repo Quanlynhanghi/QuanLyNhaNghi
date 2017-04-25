@@ -20,7 +20,7 @@ namespace FrmMain.HeThong
         }
         BLL_DangNhap bd;
         string err = "";
-        public static string tentaikhoan;
+        public static string tentaikhoan="";
         private bool kiemtradangnhap(string tentaikhoan, string matkhau)
         {
             bool kq = false;
@@ -90,7 +90,7 @@ namespace FrmMain.HeThong
 
         private void btnthoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnketnoi_Click(object sender, EventArgs e)

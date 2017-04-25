@@ -159,5 +159,52 @@ namespace FrmMain.DanhMuc
             }
             HienThiDanhSach();
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            Frm_KhachHang_Modifies _khachhang = new Frm_KhachHang_Modifies();
+            _khachhang.them = true;
+            _khachhang.ShowDialog();
+            HienThiComBox();
+            cmbMaKH.Text = _khachhang.tenkhachhang;
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            LayGiaTriTuCacControl();
+            if (_nhanphong != null)
+            {
+                if (KTTinhTrang() == false)
+                {
+                    if (bd.LuuThongTin(ref err, _nhanphong) == true)
+                    {
+                        MessageBox.Show("Phòng có mã số " + _nhanphong.Maphieuthue + " đã được cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cập nhật không thành công\n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    if (bd.InsertThongTin(ref err, _nhanphong) == true)
+                    {
+                        MessageBox.Show("Phòng có mã số " + _nhanphong.Maphieuthue + " đã được cập nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cập nhật không thành công\n" + err, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            HienThiDanhSach();
+        }
     }
 }

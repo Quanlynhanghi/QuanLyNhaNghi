@@ -52,7 +52,6 @@
             this.txtTienPhong = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX14 = new DevComponents.DotNetBar.LabelX();
             this.labelX13 = new DevComponents.DotNetBar.LabelX();
-            this.btnTimMaDVu = new DevComponents.DotNetBar.ButtonX();
             this.cmbMaPhong = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX12 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
@@ -306,7 +305,6 @@
             this.groupPanel2.Controls.Add(this.txtTienPhong);
             this.groupPanel2.Controls.Add(this.labelX14);
             this.groupPanel2.Controls.Add(this.labelX13);
-            this.groupPanel2.Controls.Add(this.btnTimMaDVu);
             this.groupPanel2.Controls.Add(this.cmbMaPhong);
             this.groupPanel2.Controls.Add(this.labelX12);
             this.groupPanel2.Controls.Add(this.labelX1);
@@ -346,7 +344,7 @@
             // 
             this.txtThanhTien.Border.Class = "TextBoxBorder";
             this.txtThanhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtThanhTien.Location = new System.Drawing.Point(159, 190);
+            this.txtThanhTien.Location = new System.Drawing.Point(159, 171);
             this.txtThanhTien.Name = "txtThanhTien";
             this.txtThanhTien.Size = new System.Drawing.Size(121, 22);
             this.txtThanhTien.TabIndex = 33;
@@ -356,7 +354,7 @@
             this.btnThanhTien.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnThanhTien.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnThanhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhTien.Location = new System.Drawing.Point(303, 189);
+            this.btnThanhTien.Location = new System.Drawing.Point(303, 171);
             this.btnThanhTien.Name = "btnThanhTien";
             this.btnThanhTien.Size = new System.Drawing.Size(75, 23);
             this.btnThanhTien.TabIndex = 14;
@@ -366,7 +364,7 @@
             // numSoNgay
             // 
             this.numSoNgay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numSoNgay.Location = new System.Drawing.Point(160, 104);
+            this.numSoNgay.Location = new System.Drawing.Point(160, 85);
             this.numSoNgay.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -385,7 +383,7 @@
             // 
             this.txtTienDVu.Border.Class = "TextBoxBorder";
             this.txtTienDVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTienDVu.Location = new System.Drawing.Point(159, 161);
+            this.txtTienDVu.Location = new System.Drawing.Point(159, 142);
             this.txtTienDVu.Name = "txtTienDVu";
             this.txtTienDVu.Size = new System.Drawing.Size(121, 22);
             this.txtTienDVu.TabIndex = 30;
@@ -397,9 +395,9 @@
             // 
             this.txtTien.Border.Class = "TextBoxBorder";
             this.txtTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTien.Location = new System.Drawing.Point(160, 132);
+            this.txtTien.Location = new System.Drawing.Point(160, 113);
             this.txtTien.Name = "txtTien";
-            this.txtTien.Size = new System.Drawing.Size(112, 22);
+            this.txtTien.Size = new System.Drawing.Size(121, 22);
             this.txtTien.TabIndex = 22;
             // 
             // txtTienPhong
@@ -409,15 +407,15 @@
             // 
             this.txtTienPhong.Border.Class = "TextBoxBorder";
             this.txtTienPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTienPhong.Location = new System.Drawing.Point(160, 67);
+            this.txtTienPhong.Location = new System.Drawing.Point(160, 48);
             this.txtTienPhong.Name = "txtTienPhong";
-            this.txtTienPhong.Size = new System.Drawing.Size(112, 22);
+            this.txtTienPhong.Size = new System.Drawing.Size(120, 22);
             this.txtTienPhong.TabIndex = 22;
             // 
             // labelX14
             // 
             this.labelX14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX14.Location = new System.Drawing.Point(15, 190);
+            this.labelX14.Location = new System.Drawing.Point(15, 171);
             this.labelX14.Name = "labelX14";
             this.labelX14.Size = new System.Drawing.Size(75, 23);
             this.labelX14.TabIndex = 19;
@@ -426,21 +424,11 @@
             // labelX13
             // 
             this.labelX13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX13.Location = new System.Drawing.Point(16, 103);
+            this.labelX13.Location = new System.Drawing.Point(16, 84);
             this.labelX13.Name = "labelX13";
             this.labelX13.Size = new System.Drawing.Size(75, 23);
             this.labelX13.TabIndex = 17;
             this.labelX13.Text = "Số ngày";
-            // 
-            // btnTimMaDVu
-            // 
-            this.btnTimMaDVu.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnTimMaDVu.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnTimMaDVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimMaDVu.Location = new System.Drawing.Point(303, 160);
-            this.btnTimMaDVu.Name = "btnTimMaDVu";
-            this.btnTimMaDVu.Size = new System.Drawing.Size(34, 23);
-            this.btnTimMaDVu.TabIndex = 11;
             // 
             // cmbMaPhong
             // 
@@ -458,7 +446,7 @@
             // labelX12
             // 
             this.labelX12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX12.Location = new System.Drawing.Point(15, 161);
+            this.labelX12.Location = new System.Drawing.Point(15, 142);
             this.labelX12.Name = "labelX12";
             this.labelX12.Size = new System.Drawing.Size(75, 23);
             this.labelX12.TabIndex = 5;
@@ -467,7 +455,7 @@
             // labelX1
             // 
             this.labelX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX1.Location = new System.Drawing.Point(16, 132);
+            this.labelX1.Location = new System.Drawing.Point(16, 113);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(75, 23);
             this.labelX1.TabIndex = 1;
@@ -476,7 +464,7 @@
             // labelX8
             // 
             this.labelX8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX8.Location = new System.Drawing.Point(15, 66);
+            this.labelX8.Location = new System.Drawing.Point(15, 47);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(75, 23);
             this.labelX8.TabIndex = 1;
@@ -760,7 +748,6 @@
         private DevComponents.DotNetBar.Controls.TextBoxX txtTienPhong;
         private DevComponents.DotNetBar.LabelX labelX14;
         private DevComponents.DotNetBar.LabelX labelX13;
-        private DevComponents.DotNetBar.ButtonX btnTimMaDVu;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cmbMaPhong;
         private DevComponents.DotNetBar.LabelX labelX12;
         private DevComponents.DotNetBar.LabelX labelX8;

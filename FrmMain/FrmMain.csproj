@@ -73,6 +73,7 @@
     <Compile Include="Bussiness\BLL_DichVu.cs" />
     <Compile Include="Bussiness\BLL_DoiMatKhau.cs" />
     <Compile Include="Bussiness\BLL_DungDV.cs" />
+    <Compile Include="Bussiness\BLL_HeThong.cs" />
     <Compile Include="Bussiness\BLL_HoaDon.cs" />
     <Compile Include="Bussiness\BLL_KhachHang.cs" />
     <Compile Include="Bussiness\BLL_NhanVien.cs" />
@@ -97,6 +98,12 @@
     </Compile>
     <Compile Include="DanhMuc\Frm_DanhSachNhanPhong.Designer.cs">
       <DependentUpon>Frm_DanhSachNhanPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_DoanhThu.Designer.cs">
+      <DependentUpon>Frm_DoanhThu.cs</DependentUpon>
     </Compile>
     <Compile Include="DanhMuc\Frm_DungDichVu.cs">
       <SubType>Form</SubType>
@@ -214,6 +221,12 @@
     <Compile Include="HeThong\Frm_DoiMatKhau.Designer.cs">
       <DependentUpon>Frm_DoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="HeThong\Frm_NguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\Frm_NguoiDung.Designer.cs">
+      <DependentUpon>Frm_NguoiDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeThong\Frm_ThietLapChuoiKetNoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\Frm_DanhSachNhanPhong.resx">
       <DependentUpon>Frm_DanhSachNhanPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_DoanhThu.resx">
+      <DependentUpon>Frm_DoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\Frm_DungDichVu.resx">
       <DependentUpon>Frm_DungDichVu.cs</DependentUpon>
@@ -291,8 +307,12 @@
     <EmbeddedResource Include="DanhMuc\Frm_ReportHoaDon.resx">
       <DependentUpon>Frm_ReportHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Rp_DoanhThu.rdlc" />
     <EmbeddedResource Include="HeThong\Frm_DoiMatKhau.resx">
       <DependentUpon>Frm_DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\Frm_NguoiDung.resx">
+      <DependentUpon>Frm_NguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HeThong\Frm_ThietLapChuoiKetNoi.resx">
       <DependentUpon>Frm_ThietLapChuoiKetNoi.cs</DependentUpon>
@@ -315,7 +335,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Rp_HoaDon.rdlc" />
-    <EmbeddedResource Include="Rp_ThongKeDichVu.rdlc" />
+    <EmbeddedResource Include="DanhMuc\Rp_ThongKeDichVu.rdlc" />
     <None Include="app.config" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>

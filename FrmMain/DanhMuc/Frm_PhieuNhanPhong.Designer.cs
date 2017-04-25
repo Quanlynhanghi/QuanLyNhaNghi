@@ -28,19 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_PhieuNhanPhong));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
-            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.dtNgayTraDuKien = new System.Windows.Forms.DateTimePicker();
+            this.btnHuy = new DevExpress.XtraEditors.SimpleButton();
             this.dtNgayNhan = new System.Windows.Forms.DateTimePicker();
-            this.labelX8 = new DevComponents.DotNetBar.LabelX();
+            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.cmbMaPHong = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.txtMaPhieuThue = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.btnThemPhieuNhan = new DevComponents.DotNetBar.ButtonX();
             this.cmbMaKH = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.cmbMaPhieuDK = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
@@ -54,6 +52,7 @@
             this.colmaphong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colngaynhan = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNgaytra = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             this.groupPanel1.SuspendLayout();
@@ -63,45 +62,27 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnHuy);
-            this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.groupPanel2);
             this.panel1.Controls.Add(this.groupPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(798, 259);
+            this.panel1.Size = new System.Drawing.Size(798, 221);
             this.panel1.TabIndex = 0;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Location = new System.Drawing.Point(515, 230);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 23);
-            this.btnHuy.TabIndex = 4;
-            this.btnHuy.Text = "Hủy";
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(418, 230);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 23);
-            this.btnLuu.TabIndex = 4;
-            this.btnLuu.Text = "Lưu";
             // 
             // groupPanel2
             // 
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel2.Controls.Add(this.dtNgayTraDuKien);
+            this.groupPanel2.Controls.Add(this.btnHuy);
             this.groupPanel2.Controls.Add(this.dtNgayNhan);
-            this.groupPanel2.Controls.Add(this.labelX8);
+            this.groupPanel2.Controls.Add(this.btnLuu);
             this.groupPanel2.Controls.Add(this.labelX7);
             this.groupPanel2.Controls.Add(this.labelX1);
             this.groupPanel2.Controls.Add(this.cmbMaPHong);
             this.groupPanel2.Location = new System.Drawing.Point(403, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(401, 218);
+            this.groupPanel2.Size = new System.Drawing.Size(401, 215);
             // 
             // 
             // 
@@ -125,14 +106,14 @@
             this.groupPanel2.TabIndex = 3;
             this.groupPanel2.Text = "Chi tiết phiếu nhận";
             // 
-            // dtNgayTraDuKien
+            // btnHuy
             // 
-            this.dtNgayTraDuKien.CustomFormat = "hh:mm:ss tt dd/MM/yyyy";
-            this.dtNgayTraDuKien.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNgayTraDuKien.Location = new System.Drawing.Point(128, 130);
-            this.dtNgayTraDuKien.Name = "dtNgayTraDuKien";
-            this.dtNgayTraDuKien.Size = new System.Drawing.Size(200, 20);
-            this.dtNgayTraDuKien.TabIndex = 3;
+            this.btnHuy.Location = new System.Drawing.Point(111, 131);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(75, 23);
+            this.btnHuy.TabIndex = 4;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // dtNgayNhan
             // 
@@ -143,13 +124,14 @@
             this.dtNgayNhan.Size = new System.Drawing.Size(200, 20);
             this.dtNgayNhan.TabIndex = 3;
             // 
-            // labelX8
+            // btnLuu
             // 
-            this.labelX8.Location = new System.Drawing.Point(12, 127);
-            this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(106, 23);
-            this.labelX8.TabIndex = 2;
-            this.labelX8.Text = "Ngày trả dự kiến";
+            this.btnLuu.Location = new System.Drawing.Point(30, 131);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(75, 23);
+            this.btnLuu.TabIndex = 4;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // labelX7
             // 
@@ -182,8 +164,8 @@
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.btnThem);
             this.groupPanel1.Controls.Add(this.txtMaPhieuThue);
-            this.groupPanel1.Controls.Add(this.btnThemPhieuNhan);
             this.groupPanel1.Controls.Add(this.cmbMaKH);
             this.groupPanel1.Controls.Add(this.cmbMaPhieuDK);
             this.groupPanel1.Controls.Add(this.labelX4);
@@ -191,7 +173,7 @@
             this.groupPanel1.Controls.Add(this.labelX2);
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(397, 218);
+            this.groupPanel1.Size = new System.Drawing.Size(397, 215);
             // 
             // 
             // 
@@ -225,17 +207,6 @@
             this.txtMaPhieuThue.Name = "txtMaPhieuThue";
             this.txtMaPhieuThue.Size = new System.Drawing.Size(100, 20);
             this.txtMaPhieuThue.TabIndex = 31;
-            // 
-            // btnThemPhieuNhan
-            // 
-            this.btnThemPhieuNhan.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnThemPhieuNhan.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnThemPhieuNhan.Location = new System.Drawing.Point(249, 53);
-            this.btnThemPhieuNhan.Name = "btnThemPhieuNhan";
-            this.btnThemPhieuNhan.Size = new System.Drawing.Size(60, 23);
-            this.btnThemPhieuNhan.TabIndex = 29;
-            this.btnThemPhieuNhan.Text = "Tạo mới";
-            this.btnThemPhieuNhan.Click += new System.EventHandler(this.btnThemPhieuNhan_Click);
             // 
             // cmbMaKH
             // 
@@ -292,10 +263,10 @@
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 259);
+            this.gridControl1.Location = new System.Drawing.Point(0, 221);
             this.gridControl1.MainView = this.grdDanhSach;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(798, 239);
+            this.gridControl1.Size = new System.Drawing.Size(798, 277);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdDanhSach});
@@ -357,8 +328,15 @@
             // 
             this.colNgaytra.Caption = "Ngày Trả";
             this.colNgaytra.Name = "colNgaytra";
-            this.colNgaytra.Visible = true;
-            this.colNgaytra.VisibleIndex = 5;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.Location = new System.Drawing.Point(315, 102);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(45, 33);
+            this.btnThem.TabIndex = 32;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // Frm_PhieuNhanPhong
             // 
@@ -384,7 +362,6 @@
         private System.Windows.Forms.Panel panel1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.Controls.TextBoxX txtMaPhieuThue;
-        private DevComponents.DotNetBar.ButtonX btnThemPhieuNhan;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cmbMaKH;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cmbMaPhieuDK;
         private DevComponents.DotNetBar.LabelX labelX4;
@@ -392,12 +369,9 @@
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView grdDanhSach;
-        private DevExpress.XtraEditors.SimpleButton btnHuy;
         private DevExpress.XtraEditors.SimpleButton btnLuu;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
-        private System.Windows.Forms.DateTimePicker dtNgayTraDuKien;
         private System.Windows.Forms.DateTimePicker dtNgayNhan;
-        private DevComponents.DotNetBar.LabelX labelX8;
         private DevComponents.DotNetBar.LabelX labelX7;
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cmbMaPHong;
@@ -407,5 +381,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colmaphong;
         private DevExpress.XtraGrid.Columns.GridColumn colngaynhan;
         private DevExpress.XtraGrid.Columns.GridColumn colNgaytra;
+        private DevExpress.XtraEditors.SimpleButton btnHuy;
+        private DevExpress.XtraEditors.SimpleButton btnThem;
     }
 }

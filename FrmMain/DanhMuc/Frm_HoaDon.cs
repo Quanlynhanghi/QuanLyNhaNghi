@@ -110,10 +110,7 @@ namespace FrmMain.DanhMuc
             {
                 txtTienDVu.Text = _obj.ToString();
             }
-            else
-            {
-                txtTienDVu.Text = "0";
-            }
+            if (String.IsNullOrEmpty(_obj.ToString())) txtTienDVu.Text = "0.00";
         }
         private void cmbMaPhong_TextChanged(object sender, EventArgs e)
         {
@@ -123,10 +120,24 @@ namespace FrmMain.DanhMuc
         private void cmbMaNhanPhong_TextChanged(object sender, EventArgs e)
         {
             tiendichvu();
+            object _obj = null;
+            _obj = bd.Tenkhachhang(ref err, cmbMaNhanPhong.Text);
+            if (_obj != null)
+            {
+                cmbTenKhachHang.Text = _obj.ToString();
+            }
         }
-
-        
-          
+        private void ngaythue()
+        {
+            DateTime ngayden;
+            SqlDataReader _reader = bd.Layngaythue(ref err, cmbMaNhanPhong.Text);
+            if (_reader.Read() == true)
+            {
+                ngayden=_reader.GetDateTime(0);
+                TimeSpan time = DateTime.Now - ngayden;
+                numSoNgay.Value = time.Days;
+            }         
+        }
         private void LayGiaTriTuCacControl()
         {
             double tong = Convert.ToDouble(txtTienDVu.Text) + Convert.ToDouble(txtTien.Text);

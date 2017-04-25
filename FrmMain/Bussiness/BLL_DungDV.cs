@@ -43,5 +43,9 @@ namespace FrmMain.Bussiness
             return data.MyExcuteNonQuery(ref err, "sp_deleteDungDV", CommandType.StoredProcedure,
                 new SqlParameter("@masudung", _dichvu.Masudung));
         }
+        public DataTable Thongke(ref string err)
+        {
+            return data.GetDataTable(ref err, "sp_ThongKeDV", CommandType.StoredProcedure, null);
+        }
     }
 }

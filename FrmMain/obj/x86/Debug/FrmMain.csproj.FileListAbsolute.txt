@@ -75,3 +75,6 @@ E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_HoaDon.resources
 E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_ReportHoaDon.resources
 E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\RdlCompile.cache
 E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\RdlCompile.compiled
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_Report_DichVu.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.DanhMuc.Frm_DoanhThu.resources
+E:\QuanLyNhaNghi\FrmMain\obj\x86\Debug\FrmMain.HeThong.Frm_NguoiDung.resources
