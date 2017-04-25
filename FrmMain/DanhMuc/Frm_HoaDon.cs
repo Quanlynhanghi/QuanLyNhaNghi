@@ -26,14 +26,13 @@ namespace FrmMain.DanhMuc
         string username = Frm_DangNhap.tentaikhoan;
         private void HienThiComBox()
         {
-            BLL_KhachHang bd = new BLL_KhachHang(cls_Main.duongdanfileketnoi);
+            BLL_KhachHang bdk = new BLL_KhachHang(cls_Main.duongdanfileketnoi);
             DataTable dtDanhSachKhachHang;
             BLL_Phong bdphong = new BLL_Phong(cls_Main.duongdanfileketnoi);
             DataTable dtDanhSachPhong;
-            BLL_PhieuNhan bdphieu = new BLL_PhieuNhan(cls_Main.duongdanfileketnoi);
             DataTable dtDanhPhieuThue;
             dtDanhSachKhachHang = new DataTable();
-            dtDanhSachKhachHang = bd.LayDanhSachKhachHang(ref err);
+            dtDanhSachKhachHang = bdk.LayDanhSachKhachHang(ref err);
             cmbTenKhachHang.DataSource = dtDanhSachKhachHang;
             cmbTenKhachHang.ValueMember = "makhachhang";
             cmbTenKhachHang.DisplayMember = "tenkhachhang";
@@ -42,7 +41,7 @@ namespace FrmMain.DanhMuc
             cmbMaPhong.DataSource = dtDanhSachPhong;
             cmbMaPhong.DisplayMember = "maphong";
             cmbMaPhong.Text = Frm_DangKiThuePhong.maphong;
-            dtDanhPhieuThue = bdphieu.LayDanhSach(ref err);
+            dtDanhPhieuThue = bd.maphieu(ref err);
             cmbMaNhanPhong.DataSource = dtDanhPhieuThue;
             cmbMaNhanPhong.DisplayMember = "maphieuthue";
         }
@@ -125,6 +124,12 @@ namespace FrmMain.DanhMuc
             if (_obj != null)
             {
                 cmbTenKhachHang.Text = _obj.ToString();
+            }
+            object obj = null;
+            obj = bd.Maphong(ref err, cmbMaNhanPhong.Text);
+            if (obj != null)
+            {
+                cmbMaPhong.Text = obj.ToString();
             }
         }
         private void ngaythue()

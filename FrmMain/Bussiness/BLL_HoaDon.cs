@@ -72,5 +72,13 @@ namespace FrmMain.Bussiness
         {
             return data.GetValue(ref err, "sp_KhachhangTheoMa", CommandType.StoredProcedure, new SqlParameter("@maphieuthue", maphieuthue));
         }
+        public object Maphong(ref string err, string maphieuthue)
+        {
+            return data.GetValue(ref err, "sp_PhongTheoMa", CommandType.StoredProcedure, new SqlParameter("@maphieuthue", maphieuthue));
+        }
+        public DataTable maphieu(ref string err)
+        {
+            return data.GetDataTable(ref err, "sp_maphieu", CommandType.StoredProcedure, null);
+        }
     }
 }
